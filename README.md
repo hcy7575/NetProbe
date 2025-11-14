@@ -7,8 +7,9 @@
 </p>
 
 ---
+
 <p align="center">
-  <img src="assets/Control.gif" alt="Control Animation" width="500" />
+  <img src="assets/check.gif" alt="Check Animation" width="540" />
 </p>
 
 # 🔥 Overview (English)
@@ -100,8 +101,8 @@ Running attacks on systems without explicit permission is **illegal**.
 
 
 <p align="center">
-  <img src="assets/check.gif" alt="Check Animation" width="540" />
-</p> 
+  <img src="assets/Control.gif" alt="Control Animation" width="500" />
+</p>
 
 # 🇹🇷 Türkçe Açıklama
 
