@@ -8,7 +8,7 @@
 
 ---
 <p align="center">
-  <img src="assets/Data security.gif" alt="Data Security Animation" width="500" />
+  <img src="assets/Control.gif" alt="Control Animation" width="500" />
 </p>
 
 # 🔥 Overview (English)
