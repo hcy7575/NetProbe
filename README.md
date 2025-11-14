@@ -182,6 +182,6 @@ Bu yazılım yalnızca izinli, eğitim amaçlı, laboratuvar ortamı için geli�
 # Signature
 
 <p align="center">
-  <em>“Security is not a product, but a process.”</em>
-  <strong>Developed with passion by Hüseyin Can Yılmaz</strong><br>
+  <em>“Security is not a product, but a process.”</em><br>
+  <strong>Developed with passion by <u>Hüseyin Can Yılmaz</u></strong>
 </p>
