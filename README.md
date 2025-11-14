@@ -131,7 +131,12 @@ Desteklenen saldırı türleri:
 ```
 /project
   /backend
+    main.py
+    Dockerfile
   /frontend
+    index.html
+    style.css
+    app.js
   /assets
   docker-compose.yml
   README.md
