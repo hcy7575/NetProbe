@@ -7,7 +7,9 @@
 </p>
 
 ---
-
+ <p align="center">
+  <img src="assets/maintenance cyber security.gif" alt="Maintenance Cyber Security" width="300" />
+</p> 
 # 🔥 Overview (English)
 
 **NetProbe** is a lightweight, web‑based offensive security dashboard designed for:
