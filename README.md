@@ -137,10 +137,14 @@ Desteklenen saldırı türleri:
 
 # 📁 Proje Yapısı
 
-```
 /project
   /backend
+    main.py
+    Dockerfile
   /frontend
+    index.html
+    style.css
+    app.js
   /assets
   docker-compose.yml
   README.md
@@ -177,6 +181,6 @@ Bu yazılım yalnızca izinli, eğitim amaçlı, laboratuvar ortamı için geli�
 # Signature
 
 <p align="center">
-  <strong>Developed with passion by Hüseyin Can Yılmaz</strong><br>
   <em>“Security is not a product, but a process.”</em>
+  <strong>Developed with passion by Hüseyin Can Yılmaz</strong><br>
 </p>
