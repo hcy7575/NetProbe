@@ -1,126 +1,165 @@
-## 🛠️ Technologies Used
+# ⚡ NetProbe
 
-### Backend
+<p align="center">
+  <img src="https://img.shields.io/badge/Project-NetProbe-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Type-Red%20Team%20Tool-red?style=for-the-badge" />
+</p>
 
--   🟦 **Python 3**
--   ⚡ **FastAPI**
--   🚀 **Uvicorn**
--   🐳 **Docker & Docker Compose**
+---
 
-### Frontend
+# 🔥 Overview (English)
 
--   🎨 **HTML5, CSS3**
--   🟨 **Vanilla JavaScript**
--   🔗 **Fetch API**
+**NetProbe** is a lightweight, web‑based offensive security dashboard designed for:
 
-------------------------------------------------------------------------
+- 🛡️ Red team training  
+- 🎓 Cybersecurity education  
+- 🧪 Authorized penetration testing labs  
 
-## ▶️ Running the Project
+It includes powerful, controlled attack simulations:
+
+- 🔥 **SYN Flood**
+- ⚡ **TCP Flood**
+- 🌐 **HTTP Stress Test**
+- 🔍 **Port Scanning**
+
+> ⚠️ **Warning:**  
+> This tool is for legal, authorized, and educational use **only**.  
+> Unauthorized use is illegal and fully the user's responsibility.
+
+---
+
+# 🛠️ Features
+
+| Attack Type | Description |
+|------------|-------------|
+| 🔥 **SYN Flood** | Sends massive half‑open TCP handshake packets. |
+| ⚡ **TCP Flood** | Generates raw TCP packets to overwhelm a service. |
+| 🌐 **HTTP Stress Test** | Sends high‑volume multi-threaded HTTP requests. |
+| 🔍 **Port Scan** | Quickly detects open ports on a target system. |
+
+---
+
+# 📁 Project Structure
+
+```
+/project
+  /backend
+    main.py
+    Dockerfile
+  /frontend
+    index.html
+    style.css
+    app.js
+  /assets
+  docker-compose.yml
+  README.md
+```
+
+---
+
+# 🛠️ Technologies Used
+
+### Backend  
+- 🟦 Python 3  
+- ⚡ FastAPI  
+- 🚀 Uvicorn  
+- 🐳 Docker & Docker Compose  
+
+### Frontend  
+- 🎨 HTML5, CSS3  
+- 🟨 Vanilla JavaScript  
+- 🔗 Fetch API  
+
+---
+
+# ▶️ Running the Project
 
 ### 1️⃣ Build & Run with Docker
-
-``` bash
+```
 docker-compose up --build
 ```
 
 ### 2️⃣ Access Points
+- **Backend (API):** http://localhost:8000  
+- **Frontend:** Open `/frontend/index.html` in your browser  
 
--   **Backend (API):** http://localhost:8000\
--   **Frontend:** Open `/frontend/index.html` in your browser
+---
 
-------------------------------------------------------------------------
+# ⚠️ Legal Disclaimer
 
-## ⚠️ Legal Disclaimer
+This project is intended strictly for **authorized**, **ethical**, and **educational** use.  
+Running attacks on systems without explicit permission is **illegal**.
 
-This tool is intended strictly for **educational and authorized use**.\
-Unauthorized usage is **illegal**, and the user accepts full
-responsibility.
+**All responsibility belongs to the user.**
 
-------------------------------------------------------------------------
+---
 
 # 🇹🇷 Türkçe Açıklama
 
-## 🔥 Genel Bakış
+# 🔥 Genel Bakış
 
-**NetProbe**, web tabanlı bir saldırı simülasyon aracıdır.\
+**NetProbe**, web tabanlı bir saldırı simülasyon aracıdır.  
 Aşağıdaki amaçlar için geliştirilmiştir:
 
--   🛡️ Red team çalışmaları\
--   🎓 Siber güvenlik eğitimleri\
--   🧪 Yetkili laboratuvar testleri
+- 🛡️ Red team çalışmaları  
+- 🎓 Siber güvenlik eğitimleri  
+- 🧪 Yetkili laboratuvar testleri  
 
 Desteklenen saldırı türleri:
 
--   🔥 SYN Flood\
--   ⚡ TCP Flood\
--   🌐 HTTP Yoğunluk Testi\
--   🔍 Port Tarama
+- 🔥 SYN Flood  
+- ⚡ TCP Flood  
+- 🌐 HTTP Yoğunluk Testi  
+- 🔍 Port Tarama  
 
-------------------------------------------------------------------------
+---
 
-## 🧩 Özellikler
+# 🧩 Özellikler
 
-  -----------------------------------------------------------------------
-  Saldırı Türü                              Açıklama
-  ----------------------------------------- -----------------------------
-  🔥 **SYN Flood**                          Hedef sistemi yarı açık TCP
-                                            istekleriyle doldurur.
+| Saldırı Türü | Açıklama |
+|--------------|----------|
+| 🔥 **SYN Flood** | Hedef sistemi yarı açık TCP istekleriyle doldurur. |
+| ⚡ **TCP Flood** | Ham TCP bağlantıları oluşturarak aşırı yük bindirir. |
+| 🌐 **HTTP Yoğunluk Testi** | Çoklu thread ile yoğun HTTP istekleri gönderir. |
+| 🔍 **Port Tarama** | Açık portları hızlıca tespit eder. |
 
-  ⚡ **TCP Flood**                          Ham TCP bağlantıları
-                                            oluşturarak aşırı yük
-                                            bindirir.
+---
 
-  🌐 **HTTP Yoğunluk Testi**                Çoklu thread ile yoğun HTTP
-                                            istekleri gönderir.
+# 📁 Proje Yapısı
 
-  🔍 **Port Tarama**                        Açık portları hızlıca tespit
-                                            eder.
-  -----------------------------------------------------------------------
-
-------------------------------------------------------------------------
-
-## 📁 Proje Yapısı
-
-``` bash
+```
 /project
   /backend
   /frontend
   /assets
   docker-compose.yml
+  README.md
 ```
 
-------------------------------------------------------------------------
+---
 
-## ▶️ Projenin Çalıştırılması
+# ▶️ Projenin Çalıştırılması
 
 ### 1️⃣ Docker ile Çalıştırma
-
-``` bash
+```
 docker-compose up --build
 ```
 
 ### 2️⃣ Erişim Noktaları
 
--   **Backend:** http://localhost:8000\
--   **Frontend:** `/frontend/index.html`
+- **Backend:** http://localhost:8000  
+- **Frontend:** /frontend/index.html  
 
-------------------------------------------------------------------------
+---
 
-## ⚠️ Yasal Uyarı
+# ⚠️ Yasal Uyarı
 
-Bu yazılım **yalnızca izinli**, **eğitim amaçlı**, **laboratuvar
-ortamı** için geliştirilmiştir.\
-İzinsiz saldırı gerçekleştirmek **yasal suçtur** ve ağır yaptırımlara
-yol açar.
+Bu yazılım yalnızca izinli, eğitim amaçlı, laboratuvar ortamı için geliştirilmiştir.  
+İzinsiz saldırı gerçekleştirmek **yasal suçtur** ve ağır yaptırımlara yol açabilir.  
 
-Kullanıcı tüm sorumluluğu kabul eder.
+**Kullanıcı tüm sorumluluğu kabul eder.**
 
-------------------------------------------------------------------------
+---
 
-```{=html}
-<p align="center">
-```
-⭐ If you like this project, consider giving it a star! ⭐
-```{=html}
-</p>
-```
+<p align="center">⭐ If you like this project, consider giving it a star! ⭐</p>
