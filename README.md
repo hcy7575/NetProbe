@@ -8,24 +8,29 @@
 
 ---
 
+# 🎬 Demo Video
+
+<p align="center">
+  <video width="640" controls>
+    <source src="assets/Cloud Security.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
+
+---
+
 # 🔥 Overview (English)
 
-**NetProbe** is a lightweight, web‑based offensive security dashboard designed for:
+**NetProbe** is a lightweight, web‑based offensive security dashboard designed for red‑team labs, education, and controlled simulations.
 
-- 🛡️ Red team training  
-- 🎓 Cybersecurity education  
-- 🧪 Authorized penetration testing labs  
+It includes:
 
-It includes powerful, controlled attack simulations:
+- 🔥 SYN Flood  
+- ⚡ TCP Flood  
+- 🌐 HTTP Stress Test  
+- 🔍 Port Scanning  
 
-- 🔥 **SYN Flood**
-- ⚡ **TCP Flood**
-- 🌐 **HTTP Stress Test**
-- 🔍 **Port Scanning**
-
-> ⚠️ **Warning:**  
-> This tool is for legal, authorized, and educational use **only**.  
-> Unauthorized use is illegal and fully the user's responsibility.
+⚠️ **Legal Notice:** Authorized educational use only.
 
 ---
 
@@ -33,10 +38,10 @@ It includes powerful, controlled attack simulations:
 
 | Attack Type | Description |
 |------------|-------------|
-| 🔥 **SYN Flood** | Sends massive half‑open TCP handshake packets. |
-| ⚡ **TCP Flood** | Generates raw TCP packets to overwhelm a service. |
-| 🌐 **HTTP Stress Test** | Sends high-volume multi-threaded HTTP requests. |
-| 🔍 **Port Scan** | Quickly detects open ports on a target system. |
+| 🔥 SYN Flood | Sends massive half‑open TCP handshake packets. |
+| ⚡ TCP Flood | Generates raw TCP packets to overwhelm a service. |
+| 🌐 HTTP Stress Test | Sends high‑volume multi-threaded HTTP requests. |
+| 🔍 Port Scan | Detects open ports quickly. |
 
 ---
 
@@ -52,6 +57,7 @@ It includes powerful, controlled attack simulations:
     style.css
     app.js
   /assets
+    Cloud Security.mp4
   docker-compose.yml
   README.md
 ```
@@ -60,129 +66,62 @@ It includes powerful, controlled attack simulations:
 
 # 🛠️ Technologies Used
 
-### Backend  
-- 🟦 Python 3  
-- ⚡ FastAPI  
-- 🚀 Uvicorn  
-- 🐳 Docker & Docker Compose  
+### Backend
+- Python 3  
+- FastAPI  
+- Uvicorn  
+- Docker & Docker Compose  
 
 ### Frontend  
-- 🎨 HTML5, CSS3  
-- 🟨 Vanilla JavaScript  
-- 🔗 Fetch API  
+- HTML5, CSS3  
+- Vanilla JavaScript  
+- Fetch API  
 
 ---
 
 # ▶️ Running the Project
 
-### 1️⃣ Build & Run with Docker
+### 1️⃣ With Docker
 ```
 docker-compose up --build
 ```
 
-### 2️⃣ Access Points
-- **Backend (API):** http://localhost:8000  
-- **Frontend:** Open `/frontend/index.html` in your browser  
-
----
-
-# 🎬 Demo Animation
-
-<p align="center">
-  <video width="420" autoplay loop muted>
-    <source src="assets/Cloud Security.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</p>
-
----
-
-# ⚠️ Legal Disclaimer
-
-This project is intended strictly for **authorized**, **ethical**, and **educational** use.  
-Running attacks on systems without explicit permission is **illegal**.
-
-**All responsibility belongs to the user.**
+### 2️⃣ Access
+- Backend → http://localhost:8000  
+- Frontend → /frontend/index.html  
 
 ---
 
 # 🇹🇷 Türkçe Açıklama
 
-# 🔥 Genel Bakış
+## 🔥 Genel Bakış
 
-**NetProbe**, web tabanlı bir saldırı simülasyon aracıdır.  
-Aşağıdaki amaçlar için geliştirilmiştir:
+NetProbe, web tabanlı bir saldırı simülasyon aracıdır.  
+Kullanım amaçları:
 
-- 🛡️ Red team çalışmaları  
-- 🎓 Siber güvenlik eğitimleri  
-- 🧪 Yetkili laboratuvar testleri  
+- Red team  
+- Siber güvenlik eğitimi  
+- Yetkili test ortamları  
 
-Desteklenen saldırı türleri:
-
-- 🔥 SYN Flood  
-- ⚡ TCP Flood  
-- 🌐 HTTP Yoğunluk Testi  
-- 🔍 Port Tarama  
-
----
-
-# 🧩 Özellikler
-
-| Saldırı Türü | Açıklama |
-|--------------|----------|
-| 🔥 **SYN Flood** | Hedef sistemi yarı açık TCP istekleriyle doldurur. |
-| ⚡ **TCP Flood** | Ham TCP bağlantıları oluşturarak aşırı yük bindirir. |
-| 🌐 **HTTP Yoğunluk Testi** | Çoklu thread ile yoğun HTTP istekleri gönderir. |
-| 🔍 **Port Tarama** | Açık portları hızlıca tespit eder. |
-
----
-
-# 📁 Proje Yapısı
-
-```
-/project
-  /backend
-    main.py
-    Dockerfile
-  /frontend
-    index.html
-    style.css
-    app.js
-  /assets
-  docker-compose.yml
-  README.md
-```
-
----
-
-# ▶️ Projenin Çalıştırılması
-
-### 1️⃣ Docker ile Çalıştırma
-```
-docker-compose up --build
-```
-
-### 2️⃣ Erişim Noktaları
-
-- **Backend:** http://localhost:8000  
-- **Frontend:** /frontend/index.html  
+Desteklenen saldırılar:  
+SYN Flood, TCP Flood, HTTP Test, Port Tarama.
 
 ---
 
 # ⚠️ Yasal Uyarı
 
-Bu yazılım yalnızca izinli, eğitim amaçlı, laboratuvar ortamı için geliştirilmiştir.  
-İzinsiz saldırı gerçekleştirmek **yasal suçtur** ve ağır yaptırımlara yol açabilir.  
+Bu araç yalnızca **izinli** ve **eğitim amaçlı** kullanılmalıdır.  
+İzinsiz kullanım suçtur.
 
-**Kullanıcı tüm sorumluluğu kabul eder.**
+---
+
+# ✒️ Signature
+
+<p align="center">
+  <strong>Developed with passion by Hüseyin Can Yılmaz</strong><br>
+  <em>“Security is not a product, but a process.”</em>
+</p>
 
 ---
 
 <p align="center">⭐ If you like this project, consider giving it a star! ⭐</p>
-
----
-
-<p align="center">
-  — © 2025 Hüseyin Can Yılmaz —  
-  <br>Cybersecurity • Red Team • Offensive Security
-</p>
