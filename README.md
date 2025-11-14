@@ -98,6 +98,11 @@ Running attacks on systems without explicit permission is **illegal**.
 
 ---
 
+
+<p align="center">
+  <img src="assets/check.gif" alt="Check Animation" width="540" />
+</p> 
+
 # 🇹🇷 Türkçe Açıklama
 
 # 🔥 Genel Bakış
