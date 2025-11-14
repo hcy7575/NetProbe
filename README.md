@@ -137,6 +137,7 @@ Desteklenen saldırı türleri:
 
 # 📁 Proje Yapısı
 
+```
 /project
   /backend
     main.py
