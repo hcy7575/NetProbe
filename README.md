@@ -34,6 +34,15 @@ It includes:
 
 ---
 
+# 🎨 Animations
+
+<p align="center">
+  <img src="assets/Data security.gif" alt="Data Security Animation" width="300" style="margin: 10px;" />
+  <img src="assets/maintenance cyber security.gif" alt="Maintenance Cyber Security" width="300" style="margin: 10px;" />
+</p>
+
+---
+
 # 🛠️ Features
 
 | Attack Type | Description |
@@ -58,10 +67,11 @@ It includes:
     app.js
   /assets
     Cloud Security.mp4
+    Data security.gif
+    maintenance cyber security.gif
   docker-compose.yml
   README.md
 ```
-
 ---
 
 # 🛠️ Technologies Used
