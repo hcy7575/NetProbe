@@ -35,7 +35,7 @@ It includes powerful, controlled attack simulations:
 |------------|-------------|
 | 🔥 **SYN Flood** | Sends massive half‑open TCP handshake packets. |
 | ⚡ **TCP Flood** | Generates raw TCP packets to overwhelm a service. |
-| 🌐 **HTTP Stress Test** | Sends high‑volume multi-threaded HTTP requests. |
+| 🌐 **HTTP Stress Test** | Sends high-volume multi-threaded HTTP requests. |
 | 🔍 **Port Scan** | Quickly detects open ports on a target system. |
 
 ---
@@ -83,6 +83,17 @@ docker-compose up --build
 ### 2️⃣ Access Points
 - **Backend (API):** http://localhost:8000  
 - **Frontend:** Open `/frontend/index.html` in your browser  
+
+---
+
+# 🎬 Demo Animation
+
+<p align="center">
+  <video width="420" autoplay loop muted>
+    <source src="assets/Cloud Security.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</p>
 
 ---
 
@@ -168,3 +179,10 @@ Bu yazılım yalnızca izinli, eğitim amaçlı, laboratuvar ortamı için geli�
 ---
 
 <p align="center">⭐ If you like this project, consider giving it a star! ⭐</p>
+
+---
+
+<p align="center">
+  — © 2025 Hüseyin Can Yılmaz —  
+  <br>Cybersecurity • Red Team • Offensive Security
+</p>
