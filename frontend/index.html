@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetProbe Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font (Modern UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ---------------- Sidebar ---------------- -->
+    <aside class="sidebar">
+        <h2 class="logo">NetProbe</h2>
+
+        <ul>
+            <li onclick="showPanel('home')">🏠 Home</li>
+            <li onclick="showPanel('attack')">⚡ Attack Panel</li>
+            <li onclick="showPanel('logs')">📜 Logs</li>
+        </ul>
+    </aside>
+
+    <!-- ---------------- Main Content ---------------- -->
+    <main class="main">
+
+        <!-- Top Navigation -->
+        <header class="topbar">
+            <span class="status-box">
+                Backend Status: <span id="backend-status" class="status-offline">Offline</span>
+            </span>
+
+            <button class="dark-toggle" onclick="toggleDarkMode()">🌓</button>
+        </header>
+
+        <!-- ---------------- Panels ---------------- -->
+
+        <section id="home" class="panel active">
+            <h1>Dashboard</h1>
+            <p>Welcome to the NetProbe attack dashboard.</p>
+        </section>
+
+        <section id="attack" class="panel">
+            <h1>Attack Panel</h1>
+
+            <div class="attack-grid">
+
+                <div class="attack-card">
+                    <h3>SYN Flood</h3>
+                    <input id="syn-target" type="text" placeholder="Target IP" />
+                    <input id="syn-port" type="number" placeholder="Port" />
+                    <button onclick="startSynFlood()">Start</button>
+                </div>
+
+                <div class="attack-card">
+                    <h3>TCP Flood</h3>
+                    <input id="tcp-target" type="text" placeholder="Target IP" />
+                    <input id="tcp-port" type="number" placeholder="Port" />
+                    <button onclick="startTcpFlood()">Start</button>
+                </div>
+
+                <div class="attack-card">
+                    <h3>HTTP Stress Test</h3>
+                    <input id="http-target" type="text" placeholder="http://example.com" />
+                    <input id="http-threads" type="number" placeholder="Thread Count" />
+                    <button onclick="startHttpStress()">Start</button>
+                </div>
+
+                <div class="attack-card">
+                    <h3>Port Scan</h3>
+                    <input id="scan-target" type="text" placeholder="Target IP" />
+                    <input id="scan-ports" type="text" placeholder="22,80,443 or 1-1024" />
+                    <button onclick="startPortScan()">Run Scan</button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="logs" class="panel">
+            <h1>Activity Logs</h1>
+            <pre id="log-box" class="terminal">No logs yet...</pre>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* -------------------------------------------------------
+   Global
+-------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    background: #f5f5f7;
+    color: #222;
+    transition: 0.3s background, 0.3s color;
+}
+
+/* DARK MODE --------------------------------------------------- */
+body.dark {
+    background: #0f0f0f;
+    color: #e3e3e3;
+}
+
+body.dark .sidebar {
+    background: #111;
+    border-right: 1px solid #222;
+}
+
+body.dark .sidebar ul li {
+    background: #222;
+}
+
+body.dark .sidebar ul li:hover {
+    background: #333;
+}
+
+body.dark .attack-card {
+    background: #1a1a1a;
+    border: 1px solid #333;
+}
+
+body.dark input {
+    background: #111;
+    color: white;
+    border: 1px solid #444;
+}
+
+body.dark .terminal {
+    background: #000;
+    color: #00ff6a;
+}
+
+/* -------------------------------------------------------
+   Sidebar
+-------------------------------------------------------- */
+.sidebar {
+    width: 240px;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 25px;
+    border-right: 1px solid #222;
+}
+
+.logo {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    background: #2a2a2a;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.sidebar ul li:hover {
+    background: #444;
+    transform: translateX(3px);
+}
+
+/* -------------------------------------------------------
+   Main content
+-------------------------------------------------------- */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* -------------------------------------------------------
+   Top Bar
+-------------------------------------------------------- */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    padding: 12px 18px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+body.dark .topbar {
+    background: #1a1a1a;
+    box-shadow: none;
+}
+
+.status-box {
+    font-size: 15px;
+}
+
+.status-online {
+    color: #00c853;
+    font-weight: 600;
+}
+
+.status-offline {
+    color: #ff4444;
+    font-weight: 600;
+}
+
+.dark-toggle {
+    background: #eaeaea;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+body.dark .dark-toggle {
+    background: #333;
+    color: white;
+}
+
+/* -------------------------------------------------------
+   Panels
+-------------------------------------------------------- */
+.panel {
+    display: none;
+}
+
+.panel.active {
+    display: block;
+}
+
+/* -------------------------------------------------------
+   Attack Panel Cards
+-------------------------------------------------------- */
+.attack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.attack-card {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    transition: 0.25s;
+}
+
+.attack-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.attack-card input {
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+}
+
+.attack-card button {
+    width: 100%;
+    padding: 12px;
+    cursor: pointer;
+    border: none;
+    background: #1a1a1a;
+    color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.attack-card button:hover {
+    background: #333;
+}
+
+/* -------------------------------------------------------
+   Terminal Log Window
+-------------------------------------------------------- */
+.terminal {
+    background: #111;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 10px;
+    color: #00ff6a;
+    font-size: 14px;
+    border: 1px solid #333;
+    white-space: pre-wrap;
+}
+
+/* Scrollbar styling */
+.terminal::-webkit-scrollbar {
+    width: 8px;
+}
+.terminal::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
